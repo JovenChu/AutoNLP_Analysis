@@ -35,9 +35,7 @@ The analysis for AutoNLP and use in different data set
 
      
 
-2. DeepBlueAI
-
-   * [AutoNLP](https://github.com/DeepBlueAI/AutoNLP) and [AutoNLP/AutoDL starting kit](https://github.com/mortal123/autonlp_starting_kit)
+2. autonlp_starting_kit
 
    * Download  docker：
 
