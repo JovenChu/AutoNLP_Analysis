@@ -1,0 +1,311 @@
+- DEMO：
+
+jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py -dataset_dir=./AutoDL_sample_data/DEMO -code_dir=./AutoDL_sample_code_submission
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:08:13 INFO run_local_test.py: ##################################################
+2019-09-18 16:08:13 INFO run_local_test.py: Begin running local test using
+2019-09-18 16:08:13 INFO run_local_test.py: code_dir = AutoDL_sample_code_submission
+2019-09-18 16:08:13 INFO run_local_test.py: dataset_dir = DEMO
+2019-09-18 16:08:13 INFO run_local_test.py: ##################################################
+2019-09-18 16:08:13,395 INFO ingestion.py: ===== Start ingestion program. 
+2019-09-18 16:08:14,107 INFO ingestion.py: Time budget: 2400
+2019-09-18 16:08:14,107 INFO ingestion.py: ************************************************
+2019-09-18 16:08:14,107 INFO ingestion.py: ******** Processing dataset Demo ********
+2019-09-18 16:08:14,107 INFO ingestion.py: ************************************************
+2019-09-18 16:08:14,107 INFO ingestion.py: Reading training set and test set...
+2019-09-18 16:08:14,226 INFO score.py: Detected the start of ingestion after 0 seconds. Start scoring.
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:08:15,043 INFO ingestion.py: [09-18 16:08:15] Importing model success, time spent so far 0.9093961715698242 sec
+2019-09-18 16:08:15,043 INFO ingestion.py: Creating model...
+2019-09-18 16:08:15,044 INFO ingestion.py: [09-18 16:08:15] Initialization success, time spent so far 0.9094095230102539 sec
+2019-09-18 16:08:15,044 INFO ingestion.py: Begin training the model...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.443 seconds.
+Prefix dict has been built succesfully.
+2019-09-18 16:08:17,730 INFO ingestion.py: [09-18 16:08:17] training success, time spent so far 2.6859946250915527 sec
+2019-09-18 16:08:17,730 INFO ingestion.py: Finished training the model.
+2019-09-18 16:08:17,730 INFO ingestion.py: Begin testing the model by making predictions on test set...
+2019-09-18 16:08:19,029 INFO ingestion.py: [09-18 16:08:19] predicting success, time spent so far 3.984112024307251 sec
+2019-09-18 16:08:19,029 INFO ingestion.py: Finished making predictions.
+2019-09-18 16:08:19,035 INFO ingestion.py: [+] 1 predictions made, time spent so far 5.64 sec
+2019-09-18 16:08:19,035 INFO ingestion.py: [+] Time left 2396.02 sec
+2019-09-18 16:08:19,035 INFO ingestion.py: Wrote the file end.txt marking the end of ingestion.
+2019-09-18 16:08:19,035 INFO ingestion.py: [+] Done. Ingestion program successfully terminated.
+2019-09-18 16:08:19,035 INFO ingestion.py: [+] Overall time spent  5.64 sec 
+2019-09-18 16:08:19,041 INFO ingestion.py: [Ingestion terminated]
+2019-09-18 16:08:19,338 INFO score.py: [+] New prediction found. Now number of predictions made = 1
+2019-09-18 16:08:19,389 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.7774.
+2019-09-18 16:08:19,390 INFO score.py: ROC AUC of the latest prediction is 0.8887.
+2019-09-18 16:08:19,390 INFO score.py: Accuracy of the latest prediction is 0.8887.
+2019-09-18 16:08:19,833 INFO score.py: Current area under learning curve for DEMO: 0.7640
+2019-09-18 16:08:19,898 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.7774.
+2019-09-18 16:08:19,898 INFO score.py: ROC AUC of the latest prediction is 0.8887.
+2019-09-18 16:08:19,898 INFO score.py: Accuracy of the latest prediction is 0.8887.
+2019-09-18 16:08:20,027 INFO score.py: Final area under learning curve for DEMO: 0.7640
+2019-09-18 16:08:20,028 INFO score.py: [+] Successfully finished scoring! Scoring duration: 5.80 sec. Ingestion duration: 5.64 sec. The score of your algorithm on the task 'DEMO' is: 0.763964.
+2019-09-18 16:08:20,028 INFO score.py: [Scoring terminated]
+
+
+
+
+
+
+- O1:
+
+jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py -dataset_dir=./AutoDL_sample_data/offline_data/O1 -code_dir=./AutoDL_sample_code_submission
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:14:32 INFO run_local_test.py: ##################################################
+2019-09-18 16:14:32 INFO run_local_test.py: Begin running local test using
+2019-09-18 16:14:32 INFO run_local_test.py: code_dir = AutoDL_sample_code_submission
+2019-09-18 16:14:32 INFO run_local_test.py: dataset_dir = O1
+2019-09-18 16:14:32 INFO run_local_test.py: ##################################################
+2019-09-18 16:14:32 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_sample_result_submission
+2019-09-18 16:14:32 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_scoring_output
+2019-09-18 16:14:32,988 INFO ingestion.py: ===== Start ingestion program. 
+2019-09-18 16:14:33,611 INFO ingestion.py: Time budget: 2400
+2019-09-18 16:14:33,611 INFO ingestion.py: ************************************************
+2019-09-18 16:14:33,611 INFO ingestion.py: ******** Processing dataset O1 ********
+2019-09-18 16:14:33,611 INFO ingestion.py: ************************************************
+2019-09-18 16:14:33,611 INFO ingestion.py: Reading training set and test set...
+2019-09-18 16:14:33,666 INFO score.py: Detected the start of ingestion after 0 seconds. Start scoring.
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:14:34,284 INFO ingestion.py: [09-18 16:14:34] Importing model success, time spent so far 0.6452419757843018 sec
+2019-09-18 16:14:34,285 INFO ingestion.py: Creating model...
+2019-09-18 16:14:34,285 INFO ingestion.py: [09-18 16:14:34] Initialization success, time spent so far 0.6452443599700928 sec
+2019-09-18 16:14:34,285 INFO ingestion.py: Begin training the model...
+2019-09-18 16:14:34,499 INFO ingestion.py: [09-18 16:14:34] training success, time spent so far 0.21403288841247559 sec
+2019-09-18 16:14:34,499 INFO ingestion.py: Finished training the model.
+2019-09-18 16:14:34,499 INFO ingestion.py: Begin testing the model by making predictions on test set...
+2019-09-18 16:14:34,521 INFO ingestion.py: [09-18 16:14:34] predicting success, time spent so far 0.23554539680480957 sec
+2019-09-18 16:14:34,521 INFO ingestion.py: Finished making predictions.
+2019-09-18 16:14:34,524 INFO ingestion.py: [+] 1 predictions made, time spent so far 1.54 sec
+2019-09-18 16:14:34,524 INFO ingestion.py: [+] Time left 2399.76 sec
+2019-09-18 16:14:34,524 INFO ingestion.py: Wrote the file end.txt marking the end of ingestion.
+2019-09-18 16:14:34,524 INFO ingestion.py: [+] Done. Ingestion program successfully terminated.
+2019-09-18 16:14:34,524 INFO ingestion.py: [+] Overall time spent  1.54 sec 
+2019-09-18 16:14:34,528 INFO ingestion.py: [Ingestion terminated]
+2019-09-18 16:14:34,691 INFO score.py: [+] New prediction found. Now number of predictions made = 1
+2019-09-18 16:14:34,714 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.6157.
+2019-09-18 16:14:34,714 INFO score.py: ROC AUC of the latest prediction is 0.8078.
+2019-09-18 16:14:34,714 INFO score.py: Accuracy of the latest prediction is 0.8078.
+2019-09-18 16:14:34,995 INFO score.py: Current area under learning curve for O1: 0.6150
+2019-09-18 16:14:35,019 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.6157.
+2019-09-18 16:14:35,019 INFO score.py: ROC AUC of the latest prediction is 0.8078.
+2019-09-18 16:14:35,019 INFO score.py: Accuracy of the latest prediction is 0.8078.
+2019-09-18 16:14:35,154 INFO score.py: Final area under learning curve for O1: 0.6150
+2019-09-18 16:14:35,154 INFO score.py: [+] Successfully finished scoring! Scoring duration: 1.49 sec. Ingestion duration: 1.54 sec. The score of your algorithm on the task 'O1' is: 0.615036.
+2019-09-18 16:14:35,154 INFO score.py: [Scoring terminated]
+
+
+
+- IMDB：
+
+jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py -dataset_dir=./AutoDL_sample_data/IMDB -code_dir=./AutoDL_sample_code_submission
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:08:45 INFO run_local_test.py: ##################################################
+2019-09-18 16:08:45 INFO run_local_test.py: Begin running local test using
+2019-09-18 16:08:45 INFO run_local_test.py: code_dir = AutoDL_sample_code_submission
+2019-09-18 16:08:45 INFO run_local_test.py: dataset_dir = IMDB
+2019-09-18 16:08:45 INFO run_local_test.py: ##################################################
+2019-09-18 16:08:45 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_sample_result_submission
+2019-09-18 16:08:45 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_scoring_output
+2019-09-18 16:08:45,372 INFO ingestion.py: ===== Start ingestion program. 
+2019-09-18 16:08:45,992 INFO ingestion.py: Time budget: 2400
+2019-09-18 16:08:45,993 INFO ingestion.py: ************************************************
+2019-09-18 16:08:45,993 INFO ingestion.py: ******** Processing dataset Imdb ********
+2019-09-18 16:08:45,993 INFO ingestion.py: ************************************************
+2019-09-18 16:08:45,993 INFO ingestion.py: Reading training set and test set...
+2019-09-18 16:08:46,020 INFO score.py: Detected the start of ingestion after 0 seconds. Start scoring.
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:08:46,894 INFO ingestion.py: [09-18 16:08:46] Importing model success, time spent so far 0.6647744178771973 sec
+2019-09-18 16:08:46,895 INFO ingestion.py: Creating model...
+2019-09-18 16:08:46,895 INFO ingestion.py: [09-18 16:08:46] Initialization success, time spent so far 0.6647772789001465 sec
+2019-09-18 16:08:46,895 INFO ingestion.py: Begin training the model...
+2019-09-18 16:08:55,659 INFO ingestion.py: [09-18 16:08:55] training success, time spent so far 8.764214038848877 sec
+2019-09-18 16:08:55,659 INFO ingestion.py: Finished training the model.
+2019-09-18 16:08:55,659 INFO ingestion.py: Begin testing the model by making predictions on test set...
+2019-09-18 16:08:56,655 INFO ingestion.py: [09-18 16:08:56] predicting success, time spent so far 9.759977102279663 sec
+2019-09-18 16:08:56,655 INFO ingestion.py: Finished making predictions.
+2019-09-18 16:08:56,671 INFO ingestion.py: [+] 1 predictions made, time spent so far 11.30 sec
+2019-09-18 16:08:56,671 INFO ingestion.py: [+] Time left 2390.24 sec
+2019-09-18 16:08:56,671 INFO ingestion.py: Wrote the file end.txt marking the end of ingestion.
+2019-09-18 16:08:56,671 INFO ingestion.py: [+] Done. Ingestion program successfully terminated.
+2019-09-18 16:08:56,671 INFO ingestion.py: [+] Overall time spent 11.30 sec 
+2019-09-18 16:08:56,677 INFO ingestion.py: [Ingestion terminated]
+2019-09-18 16:08:57,198 INFO score.py: [+] New prediction found. Now number of predictions made = 1
+2019-09-18 16:08:57,317 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.7851.
+2019-09-18 16:08:57,317 INFO score.py: ROC AUC of the latest prediction is 0.8926.
+2019-09-18 16:08:57,317 INFO score.py: Accuracy of the latest prediction is 0.8927.
+2019-09-18 16:08:57,579 INFO score.py: Current area under learning curve for IMDB: 0.7533
+2019-09-18 16:08:57,698 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.7851.
+2019-09-18 16:08:57,698 INFO score.py: ROC AUC of the latest prediction is 0.8926.
+2019-09-18 16:08:57,698 INFO score.py: Accuracy of the latest prediction is 0.8927.
+2019-09-18 16:08:57,828 INFO score.py: Final area under learning curve for IMDB: 0.7533
+2019-09-18 16:08:57,828 INFO score.py: [+] Successfully finished scoring! Scoring duration: 11.81 sec. Ingestion duration: 11.30 sec. The score of your algorithm on the task 'IMDB' is: 0.753271.
+2019-09-18 16:08:57,828 INFO score.py: [Scoring terminated]
+
+
+
+
+- 20News：
+
+jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py -dataset_dir=./AutoDL_sample_data/output/20News -code_dir=./AutoDL_sample_code_submission
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:15:27 INFO run_local_test.py: ##################################################
+2019-09-18 16:15:27 INFO run_local_test.py: Begin running local test using
+2019-09-18 16:15:27 INFO run_local_test.py: code_dir = AutoDL_sample_code_submission
+2019-09-18 16:15:27 INFO run_local_test.py: dataset_dir = 20News
+2019-09-18 16:15:27 INFO run_local_test.py: ##################################################
+2019-09-18 16:15:27 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_sample_result_submission
+2019-09-18 16:15:27 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_scoring_output
+2019-09-18 16:15:27,193 INFO ingestion.py: ===== Start ingestion program. 
+2019-09-18 16:15:27,808 INFO ingestion.py: Time budget: 2400
+2019-09-18 16:15:27,808 INFO ingestion.py: ************************************************
+2019-09-18 16:15:27,808 INFO ingestion.py: ******** Processing dataset 20news ********
+2019-09-18 16:15:27,808 INFO ingestion.py: ************************************************
+2019-09-18 16:15:27,808 INFO ingestion.py: Reading training set and test set...
+2019-09-18 16:15:27,863 INFO score.py: Detected the start of ingestion after 0 seconds. Start scoring.
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:15:28,629 INFO ingestion.py: [09-18 16:15:28] Importing model success, time spent so far 0.6269192695617676 sec
+2019-09-18 16:15:28,629 INFO ingestion.py: Creating model...
+2019-09-18 16:15:28,629 INFO ingestion.py: [09-18 16:15:28] Initialization success, time spent so far 0.6269218921661377 sec
+2019-09-18 16:15:28,629 INFO ingestion.py: Begin training the model...
+2019-09-18 16:15:35,144 INFO ingestion.py: [09-18 16:15:35] training success, time spent so far 6.514495849609375 sec
+2019-09-18 16:15:35,144 INFO ingestion.py: Finished training the model.
+2019-09-18 16:15:35,144 INFO ingestion.py: Begin testing the model by making predictions on test set...
+2019-09-18 16:15:35,784 INFO ingestion.py: [09-18 16:15:35] predicting success, time spent so far 7.154592275619507 sec
+2019-09-18 16:15:35,784 INFO ingestion.py: Finished making predictions.
+2019-09-18 16:15:35,812 INFO ingestion.py: [+] 1 predictions made, time spent so far 8.62 sec
+2019-09-18 16:15:35,812 INFO ingestion.py: [+] Time left 2392.85 sec
+2019-09-18 16:15:35,813 INFO ingestion.py: Wrote the file end.txt marking the end of ingestion.
+2019-09-18 16:15:35,813 INFO ingestion.py: [+] Done. Ingestion program successfully terminated.
+2019-09-18 16:15:35,813 INFO ingestion.py: [+] Overall time spent  8.62 sec 
+2019-09-18 16:15:35,818 INFO ingestion.py: [Ingestion terminated]
+2019-09-18 16:15:36,175 INFO score.py: [+] New prediction found. Now number of predictions made = 1
+2019-09-18 16:15:36,454 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.8340.
+2019-09-18 16:15:36,454 INFO score.py: ROC AUC of the latest prediction is 0.9170.
+2019-09-18 16:15:36,454 INFO score.py: Accuracy of the latest prediction is 0.8414.
+2019-09-18 16:15:36,710 INFO score.py: Current area under learning curve for 20News: 0.8087
+2019-09-18 16:15:36,988 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.8340.
+2019-09-18 16:15:36,989 INFO score.py: ROC AUC of the latest prediction is 0.9170.
+2019-09-18 16:15:36,989 INFO score.py: Accuracy of the latest prediction is 0.8414.
+2019-09-18 16:15:37,117 INFO score.py: Final area under learning curve for 20News: 0.8087
+2019-09-18 16:15:37,118 INFO score.py: [+] Successfully finished scoring! Scoring duration: 9.26 sec. Ingestion duration: 8.62 sec. The score of your algorithm on the task '20News' is: 0.808745.
+2019-09-18 16:15:37,118 INFO score.py: [Scoring terminated]
+
+
+
+- AGNews：
+
+jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py -dataset_dir=./AutoDL_sample_data/output/AGNews -code_dir=./AutoDL_sample_code_submission
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:16:13 INFO run_local_test.py: ##################################################
+2019-09-18 16:16:13 INFO run_local_test.py: Begin running local test using
+2019-09-18 16:16:13 INFO run_local_test.py: code_dir = AutoDL_sample_code_submission
+2019-09-18 16:16:13 INFO run_local_test.py: dataset_dir = AGNews
+2019-09-18 16:16:13 INFO run_local_test.py: ##################################################
+2019-09-18 16:16:13 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_sample_result_submission
+2019-09-18 16:16:13 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_scoring_output
+2019-09-18 16:16:14,082 INFO ingestion.py: ===== Start ingestion program. 
+2019-09-18 16:16:14,711 INFO ingestion.py: Time budget: 2400
+2019-09-18 16:16:14,711 INFO ingestion.py: ************************************************
+2019-09-18 16:16:14,711 INFO ingestion.py: ******** Processing dataset Agnews ********
+2019-09-18 16:16:14,711 INFO ingestion.py: ************************************************
+2019-09-18 16:16:14,711 INFO ingestion.py: Reading training set and test set...
+2019-09-18 16:16:14,760 INFO score.py: Detected the start of ingestion after 0 seconds. Start scoring.
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:16:15,817 INFO ingestion.py: [09-18 16:16:15] Importing model success, time spent so far 0.6537353992462158 sec
+2019-09-18 16:16:15,817 INFO ingestion.py: Creating model...
+2019-09-18 16:16:15,817 INFO ingestion.py: [09-18 16:16:15] Initialization success, time spent so far 0.6537384986877441 sec
+2019-09-18 16:16:15,817 INFO ingestion.py: Begin training the model...
+2019-09-18 16:16:21,759 INFO ingestion.py: [09-18 16:16:21] training success, time spent so far 5.941739082336426 sec
+2019-09-18 16:16:21,759 INFO ingestion.py: Finished training the model.
+2019-09-18 16:16:21,759 INFO ingestion.py: Begin testing the model by making predictions on test set...
+2019-09-18 16:16:22,289 INFO ingestion.py: [09-18 16:16:22] predicting success, time spent so far 6.471373081207275 sec
+2019-09-18 16:16:22,289 INFO ingestion.py: Finished making predictions.
+2019-09-18 16:16:22,343 INFO ingestion.py: [+] 1 predictions made, time spent so far 8.26 sec
+2019-09-18 16:16:22,343 INFO ingestion.py: [+] Time left 2393.53 sec
+2019-09-18 16:16:22,343 INFO ingestion.py: Wrote the file end.txt marking the end of ingestion.
+2019-09-18 16:16:22,343 INFO ingestion.py: [+] Done. Ingestion program successfully terminated.
+2019-09-18 16:16:22,343 INFO ingestion.py: [+] Overall time spent  8.26 sec 
+2019-09-18 16:16:22,348 INFO ingestion.py: [Ingestion terminated]
+2019-09-18 16:16:23,265 INFO score.py: [+] New prediction found. Now number of predictions made = 1
+2019-09-18 16:16:23,718 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.8795.
+2019-09-18 16:16:23,718 INFO score.py: ROC AUC of the latest prediction is 0.9398.
+2019-09-18 16:16:23,718 INFO score.py: Accuracy of the latest prediction is 0.9095.
+2019-09-18 16:16:23,975 INFO score.py: Current area under learning curve for AGNews: 0.8553
+2019-09-18 16:16:24,446 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.8795.
+2019-09-18 16:16:24,446 INFO score.py: ROC AUC of the latest prediction is 0.9398.
+2019-09-18 16:16:24,446 INFO score.py: Accuracy of the latest prediction is 0.9095.
+2019-09-18 16:16:24,574 INFO score.py: Final area under learning curve for AGNews: 0.8553
+2019-09-18 16:16:24,575 INFO score.py: [+] Successfully finished scoring! Scoring duration: 9.82 sec. Ingestion duration: 8.26 sec. The score of your algorithm on the task 'AGNews' is: 0.855251.
+
+
+
+- DBpedia：
+
+jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py -dataset_dir=./AutoDL_sample_data/output/DBpedia -code_dir=./AutoDL_sample_code_submission
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:16:47 INFO run_local_test.py: ##################################################
+2019-09-18 16:16:47 INFO run_local_test.py: Begin running local test using
+2019-09-18 16:16:47 INFO run_local_test.py: code_dir = AutoDL_sample_code_submission
+2019-09-18 16:16:47 INFO run_local_test.py: dataset_dir = DBpedia
+2019-09-18 16:16:47 INFO run_local_test.py: ##################################################
+2019-09-18 16:16:47 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_sample_result_submission
+2019-09-18 16:16:47 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_scoring_output
+2019-09-18 16:16:48,017 INFO ingestion.py: ===== Start ingestion program. 
+2019-09-18 16:16:48,645 INFO ingestion.py: Time budget: 2400
+2019-09-18 16:16:48,645 INFO ingestion.py: ************************************************
+2019-09-18 16:16:48,645 INFO ingestion.py: ******** Processing dataset Dbpedia ********
+2019-09-18 16:16:48,645 INFO ingestion.py: ************************************************
+2019-09-18 16:16:48,645 INFO ingestion.py: Reading training set and test set...
+2019-09-18 16:16:48,701 INFO score.py: Detected the start of ingestion after 0 seconds. Start scoring.
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:16:53,189 INFO ingestion.py: [09-18 16:16:53] Importing model success, time spent so far 0.6907088756561279 sec
+2019-09-18 16:16:53,189 INFO ingestion.py: Creating model...
+2019-09-18 16:16:53,189 INFO ingestion.py: [09-18 16:16:53] Initialization success, time spent so far 0.690711498260498 sec
+2019-09-18 16:16:53,189 INFO ingestion.py: Begin training the model...
+2019-09-18 16:17:32,529 INFO ingestion.py: [09-18 16:17:32] training success, time spent so far 39.33989644050598 sec
+2019-09-18 16:17:32,529 INFO ingestion.py: Finished training the model.
+2019-09-18 16:17:32,529 INFO ingestion.py: Begin testing the model by making predictions on test set...
+2019-09-18 16:17:35,715 INFO ingestion.py: [09-18 16:17:35] predicting success, time spent so far 42.52513384819031 sec
+2019-09-18 16:17:35,715 INFO ingestion.py: Finished making predictions.
+2019-09-18 16:17:36,363 INFO ingestion.py: [+] 1 predictions made, time spent so far 48.35 sec
+2019-09-18 16:17:36,363 INFO ingestion.py: [+] Time left 2357.47 sec
+2019-09-18 16:17:36,363 INFO ingestion.py: Wrote the file end.txt marking the end of ingestion.
+2019-09-18 16:17:36,363 INFO ingestion.py: [+] Done. Ingestion program successfully terminated.
+2019-09-18 16:17:36,363 INFO ingestion.py: [+] Overall time spent 48.35 sec 
+2019-09-18 16:17:36,379 INFO ingestion.py: [Ingestion terminated]
+2019-09-18 16:17:41,909 INFO score.py: [+] New prediction found. Now number of predictions made = 1
+2019-09-18 16:17:48,206 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.9781.
+2019-09-18 16:17:48,206 INFO score.py: ROC AUC of the latest prediction is 0.9891.
+2019-09-18 16:17:48,206 INFO score.py: Accuracy of the latest prediction is 0.9797.
+2019-09-18 16:17:48,474 INFO score.py: Current area under learning curve for DBpedia: 0.8370
+2019-09-18 16:17:54,867 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.9781.
+2019-09-18 16:17:54,867 INFO score.py: ROC AUC of the latest prediction is 0.9891.
+2019-09-18 16:17:54,867 INFO score.py: Accuracy of the latest prediction is 0.9797.
+2019-09-18 16:17:55,003 INFO score.py: Final area under learning curve for DBpedia: 0.8370
+2019-09-18 16:17:55,004 INFO score.py: [+] Successfully finished scoring! Scoring duration: 66.30 sec. Ingestion duration: 48.35 sec. The score of your algorithm on the task 'DBpedia' is: 0.836996.
+2019-09-18 16:17:55,004 INFO score.py: [Scoring terminated]
+
+
+
+
+- Reuters：
+
+
+
+

@@ -1,0 +1,5 @@
+ingestion_pid: 12970
+task_name: DBpedia
+time_budget: 2400
+start_time: 1568795736.787331
+0: 42.60816025733948

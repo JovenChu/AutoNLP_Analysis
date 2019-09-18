@@ -1,0 +1,5 @@
+ingestion_pid: 9572
+task_name: AGNews
+time_budget: 2400
+start_time: 1568795620.0889697
+0: 6.580273866653442

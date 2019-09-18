@@ -1,0 +1,5 @@
+ingestion_pid: 9638
+task_name: IMDB
+time_budget: 2400
+start_time: 1568795687.466222
+0: 9.757461309432983

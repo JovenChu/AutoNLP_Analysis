@@ -1,0 +1,5 @@
+ingestion_pid: 9372
+task_name: O1
+time_budget: 2400
+start_time: 1568795427.4340267
+0: 0.23569369316101074

@@ -1,0 +1,5 @@
+ingestion_pid: 9213
+task_name: 20News
+time_budget: 2400
+start_time: 1568794810.3537033
+0: 7.2505223751068115

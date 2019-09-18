@@ -1,0 +1,5 @@
+ingestion_pid: 15065
+task_name: Reuters
+time_budget: 2400
+start_time: 1568795856.620517
+0: 2.0783474445343018
