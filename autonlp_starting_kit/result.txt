@@ -306,6 +306,51 @@ jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py
 
 - Reuters：
 
-
+jovenchu@jovenchu:~/joven/autonlp/autonlp_starting_kit$ python run_local_test.py -dataset_dir=./AutoDL_sample_data/output/Reuters -code_dir=./AutoDL_sample_code_submission
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:19:14 INFO run_local_test.py: ##################################################
+2019-09-18 16:19:14 INFO run_local_test.py: Begin running local test using
+2019-09-18 16:19:14 INFO run_local_test.py: code_dir = AutoDL_sample_code_submission
+2019-09-18 16:19:14 INFO run_local_test.py: dataset_dir = Reuters
+2019-09-18 16:19:14 INFO run_local_test.py: ##################################################
+2019-09-18 16:19:14 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_sample_result_submission
+2019-09-18 16:19:14 INFO run_local_test.py: Cleaning existing output directory of last run: /home/jovenchu/joven/autonlp/autonlp_starting_kit/AutoDL_scoring_output
+2019-09-18 16:19:14,140 INFO ingestion.py: ===== Start ingestion program.
+2019-09-18 16:19:14,759 INFO ingestion.py: Time budget: 2400
+2019-09-18 16:19:14,759 INFO ingestion.py: ************************************************
+2019-09-18 16:19:14,759 INFO ingestion.py: ******** Processing dataset Reuters ********
+2019-09-18 16:19:14,759 INFO ingestion.py: ************************************************
+2019-09-18 16:19:14,759 INFO ingestion.py: Reading training set and test set...
+2019-09-18 16:19:14,812 INFO score.py: Detected the start of ingestion after 0 seconds. Start scoring.
+/home/jovenchu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-09-18 16:19:15,559 INFO ingestion.py: [09-18 16:19:15] Importing model success, time spent so far 0.6480922698974609 sec
+2019-09-18 16:19:15,560 INFO ingestion.py: Creating model...
+2019-09-18 16:19:15,560 INFO ingestion.py: [09-18 16:19:15] Initialization success, time spent so far 0.648094654083252 sec
+2019-09-18 16:19:15,560 INFO ingestion.py: Begin training the model...
+2019-09-18 16:19:17,274 INFO ingestion.py: [09-18 16:19:17] training success, time spent so far 1.7138519287109375 sec
+2019-09-18 16:19:17,274 INFO ingestion.py: Finished training the model.
+2019-09-18 16:19:17,274 INFO ingestion.py: Begin testing the model by making predictions on test set...
+2019-09-18 16:19:17,417 INFO ingestion.py: [09-18 16:19:17] predicting success, time spent so far 1.8564603328704834 sec
+2019-09-18 16:19:17,417 INFO ingestion.py: Finished making predictions.
+2019-09-18 16:19:17,450 INFO ingestion.py: [+] 1 predictions made, time spent so far 3.31 sec
+2019-09-18 16:19:17,450 INFO ingestion.py: [+] Time left 2398.14 sec
+2019-09-18 16:19:17,450 INFO ingestion.py: Wrote the file end.txt marking the end of ingestion.
+2019-09-18 16:19:17,450 INFO ingestion.py: [+] Done. Ingestion program successfully terminated.
+2019-09-18 16:19:17,450 INFO ingestion.py: [+] Overall time spent  3.31 sec
+2019-09-18 16:19:17,455 INFO ingestion.py: [Ingestion terminated]
+2019-09-18 16:19:17,917 WARNING score.py: Some columns in solution have only one class, ignoring these columns for evaluation.
+2019-09-18 16:19:18,059 INFO score.py: [+] New prediction found. Now number of predictions made = 1
+2019-09-18 16:19:18,129 WARNING score.py: Some columns in solution have only one class, ignoring these columns for evaluation.
+2019-09-18 16:19:18,284 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.6752.
+2019-09-18 16:19:18,284 INFO score.py: Accuracy of the latest prediction is 0.8535.
+2019-09-18 16:19:18,547 INFO score.py: Current area under learning curve for Reuters: 0.6696
+2019-09-18 16:19:18,622 WARNING score.py: Some columns in solution have only one class, ignoring these columns for evaluation.
+2019-09-18 16:19:18,769 INFO score.py: (2 * AUC - 1) of the latest prediction is 0.6752.
+2019-09-18 16:19:18,769 INFO score.py: Accuracy of the latest prediction is 0.8535.
+2019-09-18 16:19:18,900 INFO score.py: Final area under learning curve for Reuters: 0.6696
+2019-09-18 16:19:18,901 INFO score.py: [+] Successfully finished scoring! Scoring duration: 4.09 sec. Ingestion duration: 3.31 sec. The score of your algorithm on the task 'Reuters' is: 0.669643.
+2019-09-18 16:19:18,901 INFO score.py: [Scoring terminated]
 
 
