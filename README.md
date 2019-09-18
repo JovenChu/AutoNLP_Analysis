@@ -29,7 +29,7 @@ The analysis for AutoNLP and use in different data set
 
      - 下图说明了数据集的形式：
 
-       ![img](https://www.4paradigm.com/images/pc/autonlp/data1.png)
+       ![img](https://joven-1252328025.cos.ap-shanghai.myqcloud.com/2019-09-18-084851.png)
 
    * 评估：数据集上的解的得分计算为**学习曲线下的面积（ALC）**。
 
